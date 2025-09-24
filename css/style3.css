@@ -1,0 +1,136 @@
+:root {
+  --color-primario: #1e1e2f;
+  --color-acento: #ff4c60;
+  --color-fondo: #f9f9f9;
+  --font-base: 'Segoe UI', sans-serif;
+  --espaciado: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background-color: var(--color-fondo);
+  color: #333;
+}
+
+header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.titulo {
+  text-align: center;
+  padding: var(--espaciado);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--espaciado);
+  padding: var(--espaciado);
+}
+
+.oferta {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+}
+
+.oferta img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.oferta h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.oferta p {
+  font-size: 1.1rem;
+  color: var(--color-acento);
+}
+
+.oferta del {
+  color: #999;
+  margin-right: 0.5rem;
+}
+
+.oferta strong {
+  font-size: 1.2rem;
+}
+
+.oferta a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--color-acento);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.descuento {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #ff0000;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.contador {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+ h1 {
+  font-size: 3em;                  /* tamaño grande */
+  color: black;                  /* texto blanco */
+  text-transform: uppercase;       /* todo en mayúsculas */
+  letter-spacing: 3px;             /* más espacio entre letras */
+  text-align: center;
+  padding: 15px 30px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* sombra al texto */
+  animation: aparecer 1.5s ease-in-out;     /* animación */
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
